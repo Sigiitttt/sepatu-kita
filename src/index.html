@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+</head>
+
+<body class="font-poppins bg-white text-dark">
+
+    <!-- navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center gap-2 group">
+                        <div
+                            class="bg-dark text-white p-1.5 rounded group-hover:bg-primary transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <span class="self-center text-2xl font-bold tracking-tighter text-dark">
+                            Sepatu<span class="text-primary">Kita</span>.
+                        </span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-sm font-bold text-primary hover:text-dark transition-colors">Home</a>
+
+                    <div class="relative group">
+                        <button
+                            class="flex items-center gap-1 text-sm font-medium text-secondary hover:text-primary transition-colors py-2">
+                            <span>Categories</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+                            <div class="py-2">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-secondary hover:bg-surface hover:text-primary">Catalog</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-secondary hover:bg-surface hover:text-primary">Best
+                                    Seller</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-secondary hover:bg-surface hover:text-primary">New
+                                    Drops</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-secondary hover:bg-surface hover:text-primary">Sale
+                                    Promo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-sm font-medium text-secondary hover:text-primary transition-colors">Reviews</a>
+                    <a href="#"
+                        class="text-sm font-medium text-secondary hover:text-primary transition-colors">Support</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="hidden md:flex items-center gap-2 px-6 py-2.5 text-sm font-bold text-white bg-dark rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-gray-200 hover:shadow-orange-200 transform hover:-translate-y-0.5">
+                        <span>Shop Now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+
+                    <button id="navbar-toggle" type="button"
+                        class="inline-flex items-center p-2 text-dark rounded-lg md:hidden hover:bg-surface focus:outline-none focus:ring-2 focus:ring-primary">
+                        <span class="sr-only">Buka menu</span>
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="navbar-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-lg">
+            <ul class="flex flex-col p-4 font-medium space-y-2">
+                <li>
+                    <a href="#" class="block py-2 px-4 text-primary bg-primary/10 rounded-lg">Home</a>
+                </li>
+                <li class="border-l-2 border-gray-200 ml-4 pl-4 space-y-2 py-2">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Categories</span>
+                    <a href="#" class="block py-1 text-secondary hover:text-primary">Catalog</a>
+                    <a href="#" class="block py-1 text-secondary hover:text-primary">Best Seller</a>
+                    <a href="#" class="block py-1 text-secondary hover:text-primary">New Drops</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 text-secondary hover:bg-surface hover:text-primary rounded-lg">Reviews</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 text-center text-white bg-dark rounded-full mt-4 hover:bg-primary">
+                        Shop Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- hero -->
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 overflow-hidden bg-surface">
+
+        <div class="absolute top-0 right-0 -z-10 translate-x-1/3 -translate-y-1/4">
+            <div class="w-96 h-96 bg-primary/20 rounded-full blur-3xl filter animate-pulse"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 -z-10 -translate-x-1/3 translate-y-1/4">
+            <div class="w-72 h-72 bg-gray-200 rounded-full blur-3xl filter"></div>
+        </div>
+        <div class="absolute inset-0 -z-20 opacity-30"
+            style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <div
+                    class="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-bold tracking-widest text-primary uppercase bg-orange-50 border border-orange-100 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                        Rilis Eksklusif 2025
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-dark leading-tight">
+                        Langkah Pasti <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-500">
+                            Masa Depan.
+                        </span>
+                    </h1>
+
+                    <p class="text-secondary text-lg md:text-xl max-w-lg leading-relaxed">
+                        Desain aerodinamis dengan teknologi bantalan udara terbaru. Paduan sempurna antara kenyamanan
+                        lari dan gaya jalanan yang ikonik.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto pt-2">
+                        <a href="#"
+                            class="group flex items-center justify-center gap-2 px-8 py-4 text-white bg-dark rounded-full font-bold shadow-xl shadow-primary/20 hover:bg-primary hover:shadow-orange-300 hover:-translate-y-1 transition-all duration-300">
+                            <span>Pesan Sekarang</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="flex items-center justify-center px-8 py-4 text-dark border-2 border-gray-200 rounded-full font-bold hover:border-dark hover:bg-white transition-all duration-300">
+                            Lihat Detail
+                        </a>
+                    </div>
+
+                    <div class="pt-6 flex items-center gap-4 text-sm text-secondary font-medium">
+                        <div class="flex -space-x-3">
+                            <img class="w-10 h-10 rounded-full border-2 border-white"
+                                src="https://i.pravatar.cc/100?img=33" alt="User 1">
+                            <img class="w-10 h-10 rounded-full border-2 border-white"
+                                src="https://i.pravatar.cc/100?img=47" alt="User 2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white"
+                                src="https://i.pravatar.cc/100?img=12" alt="User 3">
+                            <div
+                                class="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-dark">
+                                +1k
+                            </div>
+                        </div>
+                        <p>Pembeli puas bulan ini</p>
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2 relative flex justify-center z-10 group perspective">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-gray-200 to-white rounded-full scale-90 -z-10 opacity-70 blur-lg">
+                    </div>
+                    <div
+                        class="absolute inset-0 border border-dashed border-gray-300 rounded-full scale-110 -z-10 animate-[spin_10s_linear_infinite]">
+                    </div>
+
+                    <div class="animate-float">
+                        <img src="https://pngimg.com/d/running_shoes_PNG5823.png" alt="Nike Air Max Red" class="w-full max-w-md md:max-w-lg object-contain drop-shadow-2xl 
+                    transform -rotate-[15deg] 
+                    group-hover:rotate-0 group-hover:scale-110 
+                    transition-all duration-500 ease-out cursor-pointer">
+                    </div>
+
+                    <div
+                        class="absolute bottom-10 right-10 md:-right-4 bg-white/70 backdrop-blur-xl p-4 pr-6 rounded-2xl shadow-2xl border border-white/50 animate-bounce-slow flex items-center gap-3">
+                        <div class="bg-primary/10 p-2 rounded-lg text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-wider text-secondary font-bold">Penawaran Spesial
+                            </p>
+                            <p class="text-2xl font-extrabold text-dark">Rp 1.250k</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- hero -->
+
+    <!-- kategori -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-dark">Kategori Pilihan</h2>
+                <p class="text-secondary mt-2">Temukan gaya yang sesuai aktivitasmu</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <a href="#" class="group block">
+                    <div
+                        class="bg-surface rounded-2xl p-6 text-center hover:bg-dark hover:text-white transition-all duration-300 border border-gray-100 hover:shadow-xl">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 text-3xl shadow-sm group-hover:scale-110 transition-transform">
+                            🏃‍♂️
+                        </div>
+                        <h3 class="font-bold text-lg">Running</h3>
+                        <p class="text-sm text-secondary group-hover:text-gray-300">24 Items</p>
+                    </div>
+                </a>
+
+                <a href="#" class="group block">
+                    <div
+                        class="bg-surface rounded-2xl p-6 text-center hover:bg-dark hover:text-white transition-all duration-300 border border-gray-100 hover:shadow-xl">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 text-3xl shadow-sm group-hover:scale-110 transition-transform">
+                            🏀
+                        </div>
+                        <h3 class="font-bold text-lg">Basketball</h3>
+                        <p class="text-sm text-secondary group-hover:text-gray-300">18 Items</p>
+                    </div>
+                </a>
+
+                <a href="#" class="group block">
+                    <div
+                        class="bg-surface rounded-2xl p-6 text-center hover:bg-dark hover:text-white transition-all duration-300 border border-gray-100 hover:shadow-xl">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 text-3xl shadow-sm group-hover:scale-110 transition-transform">
+                            👟
+                        </div>
+                        <h3 class="font-bold text-lg">Sneakers</h3>
+                        <p class="text-sm text-secondary group-hover:text-gray-300">56 Items</p>
+                    </div>
+                </a>
+
+                <a href="#" class="group block">
+                    <div
+                        class="bg-surface rounded-2xl p-6 text-center hover:bg-dark hover:text-white transition-all duration-300 border border-gray-100 hover:shadow-xl">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 text-3xl shadow-sm group-hover:scale-110 transition-transform">
+                            🎒
+                        </div>
+                        <h3 class="font-bold text-lg">Accessories</h3>
+                        <p class="text-sm text-secondary group-hover:text-gray-300">12 Items</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- kategori -->
+
+    <!-- products -->
+    <section id="products" class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <span class="text-primary font-bold tracking-widest text-sm">CATALOG</span>
+                    <h2 class="text-3xl font-extrabold text-dark mt-2">Best Seller</h2>
+                </div>
+                <a href="#" class="hidden md:inline-block text-dark font-semibold hover:text-primary transition-colors">
+                    Lihat Semua &rarr;
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div
+                    class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="relative bg-gray-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden mb-4">
+                        <img src="assets/3.png" alt="Shoe 1"
+                            class="w-48 drop-shadow-lg group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+
+                        <span class="absolute top-3 left-3 bg-white px-2 py-1 text-xs font-bold rounded-md">New</span>
+
+                        <button
+                            class="absolute bottom-3 right-3 bg-dark text-white p-2 rounded-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-lg hover:bg-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <p class="text-sm text-secondary">Running</p>
+                        <h3 class="font-bold text-dark text-lg group-hover:text-primary transition-colors">Nike Zoom Fly
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-extrabold text-primary text-xl">Rp 2.4jt</span>
+                            <div class="flex text-yellow-400 text-xs">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="relative bg-gray-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden mb-4">
+                        <img src="assets/2.png" alt="Shoe 2"
+                            class="w-48 drop-shadow-lg group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+                    </div>
+                    <div>
+                        <p class="text-sm text-secondary">Casual</p>
+                        <h3 class="font-bold text-dark text-lg group-hover:text-primary transition-colors">Adidas
+                            Ultraboost</h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-extrabold text-primary text-xl">Rp 1.8jt</span>
+                            <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="relative bg-gray-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden mb-4">
+                        <img src="assets/4.png" alt="Shoe 3"
+                            class="w-48 drop-shadow-lg group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+                        <span
+                            class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-md">Sale</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-secondary">Formal</p>
+                        <h3 class="font-bold text-dark text-lg group-hover:text-primary transition-colors">Oxford
+                            Leather</h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-extrabold text-primary text-xl">Rp 900rb</span>
+                            <span class="text-xs text-gray-400 line-through ml-2">Rp 1.5jt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="relative bg-gray-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden mb-4">
+                        <img src="assets/1.png" alt="Shoe 4"
+                            class="w-48 drop-shadow-lg group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+                    </div>
+                    <div>
+                        <p class="text-sm text-secondary">Sport</p>
+                        <h3 class="font-bold text-dark text-lg group-hover:text-primary transition-colors">Nike Runner
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-extrabold text-primary text-xl">Rp 1.1jt</span>
+                            <div class="flex text-yellow-400 text-xs">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="#"
+                    class="inline-block px-6 py-3 border border-dark rounded-full font-bold text-dark hover:bg-dark hover:text-white transition-colors">
+                    Lihat Semua Produk
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- products -->
+
+    <!-- subscribe -->
+    <section id="subscribe" class="py-20 bg-dark relative overflow-hidden">
+
+        <div
+            class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Join the Club</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 leading-tight">
+                        Dapatkan Diskon 20% <br>
+                        <span class="text-gray-400">Untuk Pembelian Pertama.</span>
+                    </h2>
+                    <p class="text-gray-400 mt-4 max-w-md mx-auto lg:mx-0">
+                        Jadilah yang pertama tahu tentang rilis sneaker terbaru, kolaborasi eksklusif, dan promo
+                        member-only.
+                    </p>
+                </div>
+
+                <div class="lg:w-1/2 w-full max-w-md">
+                    <form action="#" class="flex flex-col gap-4">
+
+                        <div class="relative">
+                            <input type="email" placeholder="Masukkan alamat email anda" class="w-full px-6 py-4 rounded-full bg-white/10 border border-gray-700 text-white placeholder-gray-400 
+                                          focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent focus:bg-white/20 
+                                          transition-all duration-300 shadow-inner" required>
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button type="button"
+                            class="w-full px-6 py-4 bg-primary text-white font-bold rounded-full hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                            Langganan Sekarang
+                        </button>
+
+                        <p class="text-xs text-center text-gray-500 mt-2">
+                            Kami menghargai privasi Anda. Unsubscribe kapan saja.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- subscribe -->
+
+    <!-- faq -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+
+            <div class="text-center mb-12">
+                <span class="text-primary font-bold tracking-widest text-sm">SUPPORT</span>
+                <h2 class="text-3xl font-extrabold text-dark mt-2">Pertanyaan Umum (FAQ)</h2>
+            </div>
+
+            <div class="space-y-4">
+
+                <details
+                    class="group bg-surface rounded-2xl p-4 border border-gray-100 cursor-pointer [&_summary::-webkit-details-marker]:hidden open:ring-2 open:ring-primary/20 open:bg-white transition-all duration-300"
+                    open>
+
+                    <summary class="flex justify-between items-center font-bold text-dark list-none">
+                        <span>Apakah produk ini 100% Original?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+
+                    <div class="text-secondary mt-3 text-sm leading-relaxed animate-fadeIn">
+                        Tentu saja. Semua sepatu yang kami jual bergaransi 100% Original Authentic. Kami bekerja sama
+                        langsung dengan distributor resmi Nike, Adidas, dan Nike. Garansi uang kembali 2x lipat jika
+                        terbukti palsu.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-surface rounded-2xl p-4 border border-gray-100 cursor-pointer [&_summary::-webkit-details-marker]:hidden open:ring-2 open:ring-primary/20 open:bg-white transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-dark list-none">
+                        <span>Bagaimana cara menukar ukuran (Size Exchange)?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-secondary mt-3 text-sm leading-relaxed animate-fadeIn">
+                        Kami menyediakan layanan penukaran ukuran gratis dalam waktu 7 hari setelah barang diterima,
+                        selama tag belum dilepas dan sepatu belum dipakai keluar rumah (hanya fitting).
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-surface rounded-2xl p-4 border border-gray-100 cursor-pointer [&_summary::-webkit-details-marker]:hidden open:ring-2 open:ring-primary/20 open:bg-white transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-dark list-none">
+                        <span>Berapa lama pengiriman ke luar pulau Jawa?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-secondary mt-3 text-sm leading-relaxed animate-fadeIn">
+                        Untuk pengiriman reguler ke luar pulau Jawa biasanya memakan waktu 3-5 hari kerja. Kami
+                        menggunakan ekspedisi JNE dan SiCepat. Tersedia juga layanan Next Day untuk kota-kota besar.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-surface rounded-2xl p-4 border border-gray-100 cursor-pointer [&_summary::-webkit-details-marker]:hidden open:ring-2 open:ring-primary/20 open:bg-white transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-dark list-none">
+                        <span>Metode pembayaran apa saja yang tersedia?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="text-secondary mt-3 text-sm leading-relaxed animate-fadeIn">
+                        Kami menerima pembayaran melalui Transfer Bank (BCA, Mandiri, BNI), E-Wallet (GoPay, OVO,
+                        ShopeePay), dan Kartu Kredit/Debit Visa & Mastercard.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+    <!-- faq -->
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <div class="bg-white text-dark p-1.5 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tighter">
+                            Sepatu<span class="text-primary">Kita</span>.
+                        </span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Destinasi utama sneakerhead Indonesia. Kami menghadirkan koleksi sepatu original terkurasi
+                        dengan harga terbaik dan garansi keaslian.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-semibold text-primary">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        Online Store Open 24/7
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Belanja</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Koleksi Pria</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Koleksi Wanita</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Anak-anak</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Sale & Promo</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">New Drops 🔥</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Bantuan</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Status Pesanan</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Konfirmasi Pembayaran</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Panduan Ukuran</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Pengembalian Barang</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Ikuti Kami</h4>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.407-.06 3.808-.06zm0 .318c-2.544 0-2.836.012-3.822.057-.966.04-1.577.213-2.164.442-.622.242-1.166.602-1.638 1.074-.472.472-.832 1.016-1.074 1.638-.23.587-.403 1.198-.442 2.164-.045.986-.057 1.278-.057 3.822v.172c0 2.544.012 2.836.057 3.822.04.966.213 1.577.442 2.164.242.622.602 1.166 1.074 1.638.472.472 1.016.832 1.638 1.074.587.23 1.198.403 2.164.442.986.045 1.278.057 3.822.057h.172c2.544 0 2.836-.012 3.822-.057.966-.04 1.577-.213 2.164-.442.622-.242 1.166-.602 1.638-1.074.472-.472.832-1.016 1.074-1.638.23-.587.403-1.198.442-2.164.045-.986.057-1.278.057-3.822V10.11c0-2.544-.012-2.836-.057-3.822-.04-.966-.213-1.577-.442-2.164a4.43 4.43 0 00-1.074-1.638c-.472-.472-1.016-.832-1.638-1.074-.587-.23-1.198-.403-2.164-.442-.986-.045-1.278-.057-3.822-.057zm-1.636 5.86a3.818 3.818 0 110 7.637 3.818 3.818 0 010-7.637zm0 .318a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.572-3.132a.659.659 0 110 1.318.659.659 0 010-1.318z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2025 KicksHub Indonesia. All Rights Reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script>
+        const toggleBtn = document.getElementById('navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
